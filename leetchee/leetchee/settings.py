@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'leetchee-20200723Thu-env.eba-prph5zgs.ap-southeast-2.elasticbeanstalk.com',
+    '127.0.0.1',
     'www.leetchee.com',
 ]
 
