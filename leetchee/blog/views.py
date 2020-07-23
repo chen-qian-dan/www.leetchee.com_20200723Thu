@@ -18,6 +18,7 @@ blogs = [
 ]
 def blog_home(request):
     context = {
+        'title': '博客',
         'blogs': blogs
     }
     return render(request, 'blog/blog_home.html', context)

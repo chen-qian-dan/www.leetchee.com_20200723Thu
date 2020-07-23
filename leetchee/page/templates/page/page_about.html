@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        {% if title %}
+            <title>红荔枝 - {{ title }}</title>
+        {% else %}
+            <title>红荔枝</title>
+        {% endif %}
     </head>
-
+    
     <body>
         <h1>page-about</h1>
     </body>
