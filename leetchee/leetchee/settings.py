@@ -25,7 +25,10 @@ SECRET_KEY = 'jzm1jiobfhfmh6p@0#&)v%isxibl@t-kr7-^(47jt#)^nd=e1@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['leetchee-20200723Thu-env.eba-prph5zgs.ap-southeast-2.elasticbeanstalk.com']
+ALLOWED_HOSTS = [
+    'leetchee-20200723Thu-env.eba-prph5zgs.ap-southeast-2.elasticbeanstalk.com',
+    'www.leetchee.com',
+]
 
 
 # Application definition
