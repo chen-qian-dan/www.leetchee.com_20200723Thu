@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        {% if title %}
-            <title>红荔枝 - {{ title }}</title>
-        {% else %}
-            <title>红荔枝</title>
-        {% endif %}
-    </head>
+{% extends 'page/page_base.html' %}
 
-    <body>
-        <h1>page-home</h1>
-    </body>
-</html>
+{% block content %}
+    <h1>page-home</h1>
+{% endblock %}
+
