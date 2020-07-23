@@ -44,6 +44,7 @@ INSTALLED_APPS = [
 
     # owned
     'page.apps.PageConfig',
+    'blog.apps.BlogConfig',
 ]
 
 MIDDLEWARE = [
