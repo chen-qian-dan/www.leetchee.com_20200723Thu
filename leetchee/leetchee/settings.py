@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'page.apps.PageConfig',
     'blog.apps.BlogConfig',
     'user.apps.UserConfig',
+
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -137,3 +139,5 @@ STATIC_ROOT = 'static'
 #     os.path.join(BASE_DIR, 'static'),
 #     '/var/www/leetchee.com/static/',
 # ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
