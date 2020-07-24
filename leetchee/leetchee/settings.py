@@ -144,6 +144,8 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = 'page_home'
 
+LOGIN_URL = 'user_login'
+
 
 # from django.contrib.messages import constants as messages
 # MESSAGE_TAGS = {
