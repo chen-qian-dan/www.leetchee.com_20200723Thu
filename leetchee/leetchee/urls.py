@@ -32,4 +32,5 @@ urlpatterns = [
     path('register/', user_views.user_register, name='user_register'),
     path('login/', auth_views.LoginView.as_view(template_name='user/user_login.html'), name='user_login'), 
     path('logout/', auth_views.LogoutView.as_view(template_name='user/user_logout.html'), name='user_logout'), 
+    path('profile/', user_views.user_profile, name='user_profile'),
 ]# + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
