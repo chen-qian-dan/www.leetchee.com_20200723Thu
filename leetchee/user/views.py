@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
+from .forms import UserRegisterForm
 
 """
 there are:
@@ -19,14 +20,14 @@ available in messages.
 
 def user_register(request):
     if request.method == 'POST':
-        form = UserCreationForm(request.POST)
+        form = UserRegisterForm(request.POST)
         if form.is_valid():
             form.save()
             username = form.cleaned_data.get('username')
             messages.success(request, f'新生成账号：{username}!')
             return redirect('page_home')
     else:
-        form = UserCreationForm()
+        form = UserRegisterForm()
     
     context = {
         'form': form
