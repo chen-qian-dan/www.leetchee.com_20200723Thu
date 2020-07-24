@@ -141,3 +141,13 @@ STATIC_ROOT = 'static'
 # ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+
+# from django.contrib.messages import constants as messages
+# MESSAGE_TAGS = {
+#     messages.ERROR: 'alert-secondary', 
+#     messages.INFO: 'alert-info', 
+#     messages.SUCCESS: 'alert-success',
+#     messages.WARNING: 'alert-warning',
+#     messages.ERROR: 'alert-danger',
+# }
