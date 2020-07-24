@@ -146,6 +146,8 @@ LOGIN_REDIRECT_URL = 'page_home'
 
 LOGIN_URL = 'user_login'
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
 
 # from django.contrib.messages import constants as messages
 # MESSAGE_TAGS = {
