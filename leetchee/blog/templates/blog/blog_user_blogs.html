@@ -1,6 +1,8 @@
-{% extends 'page/page_base.html' %}
+{% extends "page/page_base.html" %}
 
 {% block content %}
+    <h1 class="mb-3">{{ view.kwargs.username }} 共发表了 {{ page_obj.paginator.count}} 篇文章</h1>
+
     {% for blog in blogs %}
         <article class="media content-section">
             <img class="rounded-circle article-img" src="{{ blog.author.profile.image.url }}">
@@ -34,5 +36,4 @@
             <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.paginator.num_pages }}">尾页</a>
         {% endif %}
     {% endif %}
-{% endblock %}
-
+{% endblock content %}
