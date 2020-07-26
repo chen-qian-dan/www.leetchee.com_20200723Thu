@@ -4,7 +4,8 @@ from django.views.generic import (
     ListView, 
     DetailView, 
     CreateView, 
-    UpdateView
+    UpdateView, 
+    DeleteView, 
 )
 from .models import Blog
 
@@ -68,4 +69,15 @@ class BlogUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         blog = self.get_object()
         if self.request.user == blog.author:
             return True 
+        return False 
+
+
+class BlogDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    model = Blog
+    success_url = '/blog/'
+
+    def test_func(self):
+        blog = self.get_object()
+        if self.request.user == blog.author:
+            return True
         return False 
