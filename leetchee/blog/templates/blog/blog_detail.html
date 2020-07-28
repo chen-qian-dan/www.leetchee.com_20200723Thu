@@ -6,7 +6,7 @@
         <div class="media-body">
             <div class="article-metadata">
                 <a class="mr-2" href="{% url 'blog_user_blogs' blog.author.username %}">{{ object.author }}</a>
-                <small class="text-muted">{{ object.date_posted}}</small>
+                <small class="text-muted">{{ object.date_posted|date:"F d, Y"}}</small>
                 {% if object.author == user %}
                     <div>
                         <a class="btn btn-secondary btn-sm mt-1 mb-1" href="{% url 'blog_update' object.id %}">更新</a>
